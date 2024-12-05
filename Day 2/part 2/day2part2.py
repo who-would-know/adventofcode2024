@@ -35,7 +35,6 @@ def main():
                 for i in range(len(numbers)):
                     temp_list = numbers[:i] + numbers[i + 1:]
                     if (is_increasing(temp_list) or is_decreasing(temp_list)) and is_diff(temp_list):
-                        print(f'removed element from list: {temp_list}')
                         total_safe_reports += 1
                         break
 
